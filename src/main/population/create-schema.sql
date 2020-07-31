@@ -29,6 +29,19 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `overture` (
+       `id` integer not null,
+        `version` integer not null,
+        `contact_email` varchar(255),
+        `creation_date` datetime(6),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `money_interval_amount` double precision,
+        `money_interval_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,

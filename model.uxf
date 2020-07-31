@@ -296,4 +296,22 @@ m2=*
 has v</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>525</x>
+      <y>392</y>
+      <w>322</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Overture
+--
++ title: String (NotBlank)
++ creationDate: Date (Temporal(TemporalType.TIMESTAMP), Past)
++ deadline: Date (Temporal(TemporalType.TIMESTAMP))
++ description: String (NotBlank)
++ moneyInterval: Money (NotNull)
++ contactEmail: String (NotBlank, Email)</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

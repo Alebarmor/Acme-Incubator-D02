@@ -16,5 +16,58 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
+	
+	<!-- Money -->
+	
+	<bean id="Money01" class="acme.framework.datatypes.Money">
+		<property name="amount" value="256.99" />
+		<property name="currency" value="€" />
+	</bean>
+	
+	<bean id="Money02" class="acme.framework.datatypes.Money">
+		<property name="amount" value="155.00" />
+		<property name="currency" value="€" />
+	</bean>
+	
+	<bean id="Money03" class="acme.framework.datatypes.Money">
+		<property name="amount" value="79.99" />
+		<property name="currency" value="€" />
+	</bean>
+	
+	
+	<!-- Overtures -->
+	
+	<bean id="overture01" class="acme.entities.overtures.Overture">
+		<property name="title" value="Sample overture 01"/>
+		<property name="creationDate" value="2020/07/02 00:00"/>
+		<property name="deadline" value="2020/08/02 00:00"/>
+		<property name="description" value="This is an example of what an overture is. This is an opening or initiating move toward negotiations, a new relationship, an agreement, etc..., a formal or informal proposal or offer."/>
+		<property name="moneyInterval">
+			<ref bean="Money01" />
+		</property>
+		<property name="contactEmail" value="example@domain.example.com"/>
+	</bean>
+	
+	<bean id="overture02" class="acme.entities.overtures.Overture">
+		<property name="title" value="Sample overture 02"/>
+		<property name="creationDate" value="2020/07/27 00:00"/>
+		<property name="deadline" value="2020/09/22 09:45"/>
+		<property name="description" value="This is a second example of what an overture is. This is an opening or initiating move toward negotiations, a new relationship, an agreement, etc..., a formal or informal proposal or offer."/>
+		<property name="moneyInterval">
+			<ref bean="Money02" />
+		</property>
+		<property name="contactEmail" value="orange@domain.example.com"/>
+	</bean>
+	
+	<bean id="overture03" class="acme.entities.overtures.Overture">
+		<property name="title" value="Sample overture 03"/>
+		<property name="creationDate" value="2020/05/21 05:23"/>
+		<property name="deadline" value="2020/07/02 00:00"/>
+		<property name="description" value="This is a third example of what an overture is. This is an opening or initiating move toward negotiations, a new relationship, an agreement, etc..., a formal or informal proposal or offer."/>
+		<property name="moneyInterval">
+			<ref bean="Money03" />
+		</property>
+		<property name="contactEmail" value="yellow@domain.example.com"/>
+	</bean>
 
 </beans>
