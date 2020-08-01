@@ -16,5 +16,42 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
+	
+	<!-- Tool -->
+  
+  <bean id="tool01" class="acme.entities.tools.Tool">
+    <property name="title" value="Title 1" />
+	<property name="inventorName" value="Elena Puerta" />
+	<property name="sector" value="Industrial" />
+	<property name="description" value="description 1"/>
+	<property name="website" value="http://web.com"/>
+	<property name="email" value="email1@mail.com"/>
+	<property name="isOpenSource" value="true"/>
+	<property name="starsNumber" value="2" />
+</bean>
+	
+	<bean id="tool02" class="acme.entities.tools.Tool">
+	    <property name="title" value="Title 2" />
+	    <property name="sector" value = "Financiero"/>
+		<property name="inventorName" value="Manuel Caballo"/>
+		<property name="description" value="description 2"/>
+	    <property name="website" value="http://web2.com"/>
+	    <property name="email" value="email2@mail.com"/>
+	    <property name="isOpenSource" value="false"/>
+		<property name="starsNumber" value="3"/>
+	</bean>
+	
+	<bean id="tool03" class="acme.entities.tools.Tool">
+	    <property name="title" value="Title 3" />
+		<property name="inventorName" value="Gerardo Valiente"/>
+		<property name="sector" value = "Salud"/>
+		<property name="description" value="description 3"/>
+	    <property name="website" value="http://web3.com"/>
+	    <property name="email" value="email3@mail.com"/>
+	    <property name="isOpenSource" value="false"/>
+		<property name="starsNumber" value="3"/>
+	</bean>
+  
+  
 
 </beans>
