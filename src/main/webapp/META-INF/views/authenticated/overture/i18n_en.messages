@@ -10,13 +10,13 @@
 
 authenticated.overture.list.label.title = Title
 authenticated.overture.list.label.creationDate = Creation date
-authenticated.overture.list.label.moneyInterval = Money interval
 
 authenticated.overture.form.label.title = Title:
 authenticated.overture.form.label.creationDate = Creation date:
 authenticated.overture.form.label.deadline = Deadline:
 authenticated.overture.form.label.description = Description:
-authenticated.overture.form.label.moneyInterval = Money interval:
+authenticated.overture.form.label.minMoney = Min. money amount:
+authenticated.overture.form.label.maxMoney = Max. money amount:
 authenticated.overture.form.label.contactEmail = Contact Email:
 
 authenticated.overture.form.button.return = Return

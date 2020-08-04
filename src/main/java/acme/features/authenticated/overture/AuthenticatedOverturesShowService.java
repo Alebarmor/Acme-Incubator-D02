@@ -30,7 +30,7 @@ public class AuthenticatedOverturesShowService implements AbstractShowService<Au
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "creationDate", "deadline", "description", "moneyInterval", "contactEmail");
+		request.unbind(entity, model, "title", "creationDate", "deadline", "description", "minMoney", "maxMoney", "contactEmail");
 	}
 
 	@Override

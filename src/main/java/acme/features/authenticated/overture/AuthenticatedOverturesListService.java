@@ -32,7 +32,7 @@ public class AuthenticatedOverturesListService implements AbstractListService<Au
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "creationDate", "moneyInterval");
+		request.unbind(entity, model, "title", "creationDate");
 	}
 
 	@Override

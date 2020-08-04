@@ -19,7 +19,6 @@
 <acme:list>
 	<acme:list-column code="authenticated.overture.list.label.title" path="title" width="20%"/>
 	<acme:list-column code="authenticated.overture.list.label.creationDate" path="creationDate" width="40%"/>		
-	<acme:list-column code="authenticated.overture.list.label.moneyInterval" path="moneyInterval" width="40%"/>		
 </acme:list>
 
 
