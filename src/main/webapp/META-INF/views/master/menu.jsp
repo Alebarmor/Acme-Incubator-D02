@@ -26,6 +26,11 @@
 
 
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.anonymous.technologyRecord" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.anonymous.technologyRecord.list" action="/anonymous/technology-record/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.technologyRecord.list-as" action="/anonymous/technology-record/list-as"/>
+		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
