@@ -19,6 +19,6 @@
 <acme:list>
 	<acme:list-column code="anonymous.techonologyRecord.list.label.title" path="title" width="20%"/>
 	<acme:list-column code="anonymous.techonologyRecord.list.label.activitySector" path="activitySector" width="40%"/>		
-	<acme:list-column code="anonymous.techonologyRecord.list.label.inventor" path="inventor" width="40%"/>		
+	<acme:list-column code="anonymous.techonologyRecord.list.label.stars" path="stars" width="40%"/>		
 </acme:list>
 

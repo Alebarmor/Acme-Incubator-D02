@@ -30,7 +30,7 @@ administrator.user-account.list.label.surname = Apellidos
 
 anonymous.techonologyRecord.list.label.title = Título
 anonymous.techonologyRecord.list.label.activitySector = Sector de actividad
-anonymous.techonologyRecord.list.label.inventor = Inventor
+anonymous.techonologyRecord.list.label.stars = Estrellas
 
 anonymous.techonologyRecord.form.label.title = Título:
 anonymous.techonologyRecord.form.label.activitySector = Sector de actividad:
