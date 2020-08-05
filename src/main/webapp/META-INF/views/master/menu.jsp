@@ -49,11 +49,7 @@
 		<acme:menu-option code="master.menu.anonymous.tool" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.anonymous.tool.list" action="/anonymous/tool/list"/>
 		</acme:menu-option>
-		
-	<%-- 	<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.authenticated.challenge" action="/authenticated/challenge/list"/>
-		</acme:menu-option>
- --%>
+
 		<acme:menu-option code="master.menu.authenticated.overture" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.overture.list" action="/authenticated/overture/list"/>
 		</acme:menu-option>
