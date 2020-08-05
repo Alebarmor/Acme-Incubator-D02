@@ -22,7 +22,7 @@
 	<acme:form-moment code="anonymous.techonologyRecord.form.label.description" path="description"/>
 	<acme:form-moment code="anonymous.techonologyRecord.form.label.web" path="web"/>
 	<acme:form-textarea code="anonymous.techonologyRecord.form.label.contactEmail" path="contactEmail"/>
-	<acme:form-textbox code="anonymous.techonologyRecord.form.label.source" path="source"/>
+	<acme:form-checkbox code="anonymous.techonologyRecord.form.label.source" path="source"/>
 	<acme:form-textbox code="anonymous.techonologyRecord.form.label.stars" path="stars"/>
 
 	<acme:form-return code="anonymous.techonologyRecord.form.button.return"/>
