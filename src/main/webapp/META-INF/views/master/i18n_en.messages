@@ -33,14 +33,20 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link.alebarmor = Ale's favourite link
 master.menu.anonymous.favourite-link.lizseth = Lizseth's favourite link
 master.menu.anonymous.favourite-link.jaime = Jaime's favourite link
-master.menu.anonymous.tool = Tool List
+
+master.menu.anonymous.technologyRecord = Technology Record
+master.menu.anonymous.technologyRecord.list = Records
+
+master.menu.anonymous.tool = Tools
+master.menu.anonymous.tool.list = Tools list
 
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated.overture = Overtures
-master.menu.authenticated.overture.list = Overture's List
-master.menu.anonymous.technologyRecord = Technology Record
-master.menu.anonymous.technologyRecord.list = Records
+master.menu.authenticated.overture.list = Overtures List
+
+master.menu.authenticated.inquire = Inquires
+master.menu.authenticated.inquire.list = Inquires list
 
 # master.menu.administrator ###################################################
 
@@ -48,7 +54,11 @@ master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 
+master.menu.administrator.notice = Notices
+master.menu.administrator.notice.list = Notices list
+
 # master.menu.authenticated ###################################################
+
 master.menu.authenticated = Authenticated
 master.menu.authenticated.challenge = Challenge list
 
