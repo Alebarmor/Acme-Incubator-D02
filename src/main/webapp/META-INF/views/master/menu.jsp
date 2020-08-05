@@ -26,6 +26,10 @@
 
 
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.anonymous.technologyRecord" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.anonymous.technologyRecord.list" action="/anonymous/technology-record/list"/>
+		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.authenticated.overture" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.overture.list" action="/authenticated/overture/list"/>

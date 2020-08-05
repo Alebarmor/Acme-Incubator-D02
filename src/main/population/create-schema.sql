@@ -1,4 +1,3 @@
-
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -38,6 +37,29 @@
         `description` varchar(255),
         `money_interval_amount` double precision,
         `money_interval_currency` varchar(255),
+
+    create table `inquire` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `paragraphs` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `notice` (
+       `id` integer not null,
+        `version` integer not null,
+        `body` varchar(255),
+        `deadline` datetime(6),
+        `header_picture` varchar(255),
+        `related_notices` varchar(255),
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;

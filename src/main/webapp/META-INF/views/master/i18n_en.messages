@@ -38,6 +38,8 @@ master.menu.anonymous.favourite-link.jaime = Jaime's favourite link
 
 master.menu.authenticated.overture = Overtures
 master.menu.authenticated.overture.list = Overture's List
+master.menu.anonymous.technologyRecord = Technology Record
+master.menu.anonymous.technologyRecord.list = Records
 
 # master.menu.administrator ###################################################
 
