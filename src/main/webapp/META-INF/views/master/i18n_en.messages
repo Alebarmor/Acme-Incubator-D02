@@ -40,6 +40,8 @@ master.menu.anonymous.technologyRecord.list = Records
 master.menu.anonymous.tool = Tools
 master.menu.anonymous.tool.list = Tools list
 
+master.menu.anonymous.notice.list = Active notices list
+
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated.overture = Overtures

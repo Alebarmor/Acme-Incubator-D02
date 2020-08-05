@@ -41,6 +41,8 @@ master.menu.anonymous.technologyRecord.list = Registros
 master.menu.anonymous.tool = Herramientas
 master.menu.anonymous.tool.list = Lista de herramientas
 
+master.menu.anonymous.notice.list = Lista de avisos activos
+
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated.overture = Propuestas
