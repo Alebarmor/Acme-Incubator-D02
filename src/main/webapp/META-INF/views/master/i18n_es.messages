@@ -51,6 +51,9 @@ master.menu.authenticated.overture.list = Lista de propuestas
 master.menu.authenticated.inquire = Preguntas
 master.menu.authenticated.inquire.list = Lista de preguntas
 
+master.menu.authenticated.challenge = Retos
+master.menu.authenticated.challenge.list= Lista de Retos
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
@@ -62,7 +65,7 @@ master.menu.administrator.notice.list = Lista de avisos
 
 # master.menu.authenticated ###################################################
 master.menu.authenticated = Authenticado
-master.menu.authenticated.challenge = Lista de Retos
+
 
 
 # master.menu.provider ########################################################
