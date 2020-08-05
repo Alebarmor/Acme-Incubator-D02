@@ -20,6 +20,24 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `average_goal` varchar(255),
+        `average_reward_amount` double precision,
+        `average_reward_currency` varchar(255),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `expert_goal` varchar(255),
+        `expert_reward_amount` double precision,
+        `expert_reward_currency` varchar(255),
+        `rookie_goal` varchar(255),
+        `rookie_reward_amount` double precision,
+        `rookie_reward_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
@@ -28,16 +46,6 @@
         `sector` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
-
-    create table `overture` (
-       `id` integer not null,
-        `version` integer not null,
-        `contact_email` varchar(255),
-        `creation_date` datetime(6),
-        `deadline` datetime(6),
-        `description` varchar(255),
-        `money_interval_amount` double precision,
-        `money_interval_currency` varchar(255),
 
     create table `inquire` (
        `id` integer not null,
@@ -65,12 +73,55 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `overture` (
+       `id` integer not null,
+        `version` integer not null,
+        `contact_email` varchar(255),
+        `creation_date` datetime(6),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `technology_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `activity_sector` varchar(255),
+        `contact_email` varchar(255),
+        `description` varchar(255),
+        `inventor` varchar(255),
+        `source` bit,
+        `stars` integer,
+        `title` varchar(255),
+        `web` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `tool` (
+       `id` integer not null,
+        `version` integer not null,
+        `description` varchar(255),
+        `email` varchar(255),
+        `inventor_name` varchar(255),
+        `is_open_source` bit,
+        `sector` varchar(255),
+        `stars_number` integer,
+        `title` varchar(255),
+        `website` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -119,4 +170,3 @@
        add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
-

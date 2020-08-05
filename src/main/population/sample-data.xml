@@ -98,19 +98,20 @@
 				<property value="€" name="currency"/>
 			</bean>
 		</property>
+	</bean>
 
 	<!-- Tool -->
   
-  <bean id="tool01" class="acme.entities.tools.Tool">
-    <property name="title" value="Title 1" />
-	<property name="inventorName" value="Elena Puerta" />
-	<property name="sector" value="Actividad 1" />
-	<property name="description" value="description 1"/>
-	<property name="website" value="http://web.com"/>
-	<property name="email" value="email1@mail.com"/>
-	<property name="isOpenSource" value="true"/>
-	<property name="starsNumber" value="2" />
-</bean>
+	<bean id="tool01" class="acme.entities.tools.Tool">
+    	<property name="title" value="Title 1" />
+		<property name="inventorName" value="Elena Puerta" />
+		<property name="sector" value="Actividad 1" />
+		<property name="description" value="description 1"/>
+		<property name="website" value="http://web.com"/>
+		<property name="email" value="email1@mail.com"/>
+		<property name="isOpenSource" value="true"/>
+		<property name="starsNumber" value="2" />
+	</bean>
 	
 	<bean id="tool02" class="acme.entities.tools.Tool">
 	    <property name="title" value="Title 2" />
