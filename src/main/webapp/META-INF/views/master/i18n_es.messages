@@ -42,6 +42,7 @@ master.menu.anonymous.tool = Herramientas
 master.menu.anonymous.tool.list = Lista de herramientas
 
 master.menu.anonymous.notice.list = Lista de avisos activos
+master.menu.anonymous.notice = Avisos
 
 # master.menu.authenticated #######################################################
 
@@ -53,6 +54,9 @@ master.menu.authenticated.inquire.list = Lista de preguntas
 
 master.menu.authenticated.challenge = Retos
 master.menu.authenticated.challenge.list= Lista de Retos
+
+master.menu.authenticated.notice = Avisos
+master.menu.authenticated.notice.list = Lista de avisos
 
 # master.menu.administrator ###################################################
 

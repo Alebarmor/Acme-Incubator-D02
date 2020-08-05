@@ -41,14 +41,19 @@ master.menu.anonymous.tool = Tools
 master.menu.anonymous.tool.list = Tools list
 
 master.menu.anonymous.notice.list = Active notices list
+master.menu.anonymous.notice = Notices
+
 
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated.overture = Overtures
 master.menu.authenticated.overture.list = Overtures List
 
-master.menu.authenticated.inquire = Inquires
+master.menu.authenticated.inquire = Inquiries
 master.menu.authenticated.inquire.list = Inquires list
+
+master.menu.authenticated.notice = Notice
+master.menu.authenticated.notice.list = Notices list 
 
 master.menu.authenticated.challenge = Challenge
 master.menu.authenticated.challenge.list= 	Challenges List
@@ -62,10 +67,11 @@ master.menu.administrator.shutdown = Shut down
 master.menu.administrator.notice = Notices
 master.menu.administrator.notice.list = Notices list
 
+
+
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Authenticated
-
 
 # master.menu.provider ########################################################
 

@@ -36,11 +36,26 @@
 			<acme:menu-suboption code="master.menu.anonymous.tool.list" action="/anonymous/tool/list"/>
 		</acme:menu-option>
 		
-		<acme:menu-option code="master.menu.administrator.notice">
-			<acme:menu-suboption code="master.menu.anonymous.notice.list" action="/anonymous/notice/list" access="isAnonymous()"/>
-			<acme:menu-suboption code="master.menu.anonymous.notice.list" action="/anonymous/notice/list" access="hasRole('Administrator')"/>
-			<acme:menu-suboption code="master.menu.administrator.notice.list" action="/administrator/notice/list" access="hasRole('Administrator')"/>
+		<acme:menu-option code="master.menu.anonymous.notice" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.anonymous.notice.list" action="/anonymous/notice/list"/>
 		</acme:menu-option>
+		
+		
+		<acme:menu-option code="master.menu.authenticated.inquire" access="isAuthenticated()">
+		<acme:menu-suboption code="master.menu.authenticated.inquire.list" action="/authenticated/inquire/list"/>
+		</acme:menu-option>
+		
+		
+		<acme:menu-option code="master.menu.authenticated.notice" access="isAuthenticated()">
+		<acme:menu-suboption code="master.menu.authenticated.notice.list" action="/authenticated/notice/list"/>
+		</acme:menu-option>
+		
+		
+		<acme:menu-option code="master.menu.administrator.notice" access="hasRole('Administrator')">
+		<acme:menu-suboption code="master.menu.administrator.notice.list" action="/administrator/notice/list"/>
+		</acme:menu-option>
+		
+		
 		
 		<acme:menu-option code="master.menu.anonymous.technologyRecord" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.anonymous.technologyRecord.list" action="/anonymous/technology-record/list"/>
