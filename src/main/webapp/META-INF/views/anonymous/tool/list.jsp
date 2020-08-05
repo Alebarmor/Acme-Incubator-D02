@@ -17,6 +17,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="anonymous.tool.list.label.title" path="title" width="50%" />
-	<acme:list-column code="anonymous.tool.list.label.sector" path="sector" width="50%" />
+	<acme:list-column code="anonymous.tool.list.label.title" path="title" width="40%" />
+	<acme:list-column code="anonymous.tool.list.label.sector" path="sector" width="40%" />
+	<acme:list-column code="anonymous.tool.list.label.starsNumber" path="starsNumber" width="20%" />
+	
 </acme:list>
