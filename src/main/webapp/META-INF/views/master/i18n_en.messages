@@ -33,6 +33,7 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link.alebarmor = Ale's favourite link
 master.menu.anonymous.favourite-link.lizseth = Lizseth's favourite link
 master.menu.anonymous.favourite-link.jaime = Jaime's favourite link
+master.menu.anonymous.tool = Tool List
 
 # master.menu.authenticated #######################################################
 
