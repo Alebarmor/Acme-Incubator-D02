@@ -1,4 +1,4 @@
-
+    
     alter table `administrator` 
        drop 
        foreign key FK_2a5vcjo3stlfcwadosjfq49l1;
@@ -25,9 +25,17 @@
 
     drop table if exists `authenticated`;
 
-    drop table if exists `challenge`;
-
     drop table if exists `consumer`;
+
+    drop table if exists `overture`;
+    
+    drop table if exists `challenge`;
+        
+    drop table if exists `tool`;
+
+    drop table if exists `inquire`;
+
+    drop table if exists `notice`;
 
     drop table if exists `provider`;
 
