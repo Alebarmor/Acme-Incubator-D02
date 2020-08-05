@@ -62,18 +62,6 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>238</x>
-      <y>70</y>
-      <w>21</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>lt=..
-</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
       <x>588</x>
       <y>203</y>
       <w>70</w>
@@ -299,12 +287,74 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>329</x>
-      <y>350</y>
-      <w>217</w>
+      <x>322</x>
+      <y>399</y>
+      <w>231</w>
       <h>112</h>
     </coordinates>
-    <panel_attributes>TechnologyRecord
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Notice
+--
++headerPicture: String{NotBlank, URL}
++title: String{NotBlank}
++deadline: Date{Temporal(TIMESTAMP),NotNull}
++body: String{NotBlank}
++relatedNotices: String{URL}
+
+  </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>868</x>
+      <y>399</y>
+      <w>308</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Overture
+--
++ title: String (NotBlank)
++ creationDate: Date (Temporal(TemporalType.TIMESTAMP), Past)
++ deadline: Date (Temporal(TemporalType.TIMESTAMP))
++ description: String (NotBlank)
++ minMoney: Money (NotNull)
++ maxMoney: Money (NotNull)
++ contactEmail: String (NotBlank, Email)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>588</x>
+      <y>399</y>
+      <w>259</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Inquire
+--
++title: String{NotBlank}
++creationMoment: Date{Temporal(TIMESTAMP),NotNull}
++deadline: Date{Temporal(TIMESTAMP),NotNull}
++paragraphs: String{NotBlank}
++minMoney: Money{NotNull}
++maxMoney: Money{NotNull}
++email: String{NotBlank, Email}
+  </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>322</x>
+      <y>553</y>
+      <w>238</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+TechnologyRecord
 --
 + title: String {NotBlank}
 + activitySector: String {NotBlank}
@@ -314,6 +364,49 @@ has v</panel_attributes>
 + contactEmail: String {NotBlank, Email}
 + source: String {NotBlank}
 + stars: Integer {Min(-5), Max(+5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>588</x>
+      <y>553</y>
+      <w>252</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Tool
+--
++ title: String {NotBlank}
++ sector: String {NotBlank}
++ inventorName: String {NotBlank}
++ description: String {NotBlank}
++ website: String {NotBlank}
++ investingStatement: String {NotBlank}
++ isOpenSource : Boolean {NotNull}
++ starsNumber: Integer {Min(-5), Max(+5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>868</x>
+      <y>553</y>
+      <w>308</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Challenge
+--
++title: String{NotBlank}
++deadline: Date{Temporal(TIMESTAMP),NotNull}
++description: String{NotBlank}
++expertGoal: String{NotBlank}
++expertReward: Money{NotNull}
++averageGoal: String{NotBlank}
++averageReward: Money{NotNull}
++rookieGoal: String{NotBlank}
++rookieReward: Money{NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

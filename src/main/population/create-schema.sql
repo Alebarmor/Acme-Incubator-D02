@@ -1,4 +1,3 @@
-
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -29,26 +28,38 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `inquire` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `paragraphs` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `notice` (
+       `id` integer not null,
+        `version` integer not null,
+        `body` varchar(255),
+        `deadline` datetime(6),
+        `header_picture` varchar(255),
+        `related_notices` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `technology_record` (
-       `id` integer not null,
-        `version` integer not null,
-        `activity_sector` varchar(255),
-        `contact_email` varchar(255),
-        `description` varchar(255),
-        `inventor` varchar(255),
-        `source` bit,
-        `stars` integer,
-        `title` varchar(255),
-        `web` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

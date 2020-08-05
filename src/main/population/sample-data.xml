@@ -16,7 +16,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
-	
+
 	<!-- Technology Records -->
 	
 	<bean id="technologyRecord01" class="acme.entities.technologyRecords.TechnologyRecord">
@@ -50,6 +50,83 @@
 		<property name="contactEmail" value="example3@hotmail.com"/>
 		<property name="source" value="true"/>
 		<property name="stars" value="+3"/>
+	</bean>
+
+	<!-- Notices  -->
+	<bean id="notice01" class="acme.entities.notices.Notice">
+		<property name="headerPicture" value="https://exampleimage1.com"/>
+		<property name="title" value="Sample notice 01"/>
+		<property name="deadline" value="2029/10/31 14:30"/>
+		<property name="relatedNotices"><null/></property>
+		<property name="body" value="This is the first body text"/>
+	</bean>
+	
+	
+	
+	<bean id="notice02" class="acme.entities.notices.Notice">
+		<property name="headerPicture" value="https://exampleimage2.com"/>
+		<property name="title" value="Sample notice 02"/>
+		<property name="deadline" value="2021/10/31 14:30"/>
+		<property name="relatedNotices" value="https://example.com"/>
+		<property name="body" value="This is the second body text"/>
+	</bean>
+	
+	<bean id="notice03" class="acme.entities.notices.Notice">
+		<property name="headerPicture" value="https://exampleimage3.com"/>
+		<property name="title" value="Sample notice 03"/>
+		<property name="deadline" value="2039/10/31 14:30"/>
+		<property name="relatedNotices" value="https://google.com"/>
+		<property name="body" value="This is the third body text"/>
+	</bean>
+	
+	<bean id="notice04" class="acme.entities.notices.Notice">
+		<property name="headerPicture" value="https://exampleimage4.com"/>
+		<property name="title" value="Sample notice 04"/>
+		<property name="deadline" value="2019/10/31 14:30"/>
+		<property name="relatedNotices" value="https://google.com"/>
+		<property name="body" value="This is the 4rd body text"/>
+	</bean>
+	
+	<!-- Inquiries  -->
+	
+	<bean id="inquire01" class="acme.entities.inquiries.Inquire">
+		<property name="title" value="Sample inquire 01"/>
+		<property name="creationMoment" value="2019/10/11 14:30"/>
+		<property name="deadline" value="2029/10/01 14:30"/>
+		<property name="paragraphs" value="This is the first description"/>
+		<property name="minMoney" value="30000.00 €"/>
+		<property name="maxMoney" value="33000.00 €"/>
+		<property name="email" value="example@email.com"/>
+	</bean>
+	
+	<bean id="inquire02" class="acme.entities.inquiries.Inquire">
+		<property name="title" value="Sample inquire 01"/>
+		<property name="creationMoment" value="2019/05/12 14:30"/>
+		<property name="deadline" value="2029/10/11 14:30"/>
+		<property name="paragraphs" value="This is the second description"/>
+		<property name="minMoney" value="34000.00 €"/>
+		<property name="maxMoney" value="39000.00 €"/>
+		<property name="email" value="example2@email.com"/>
+	</bean>
+	
+	<bean id="inquire03" class="acme.entities.inquiries.Inquire">
+		<property name="title" value="Sample inquire 01"/>
+		<property name="creationMoment" value="2019/01/22 14:30"/>
+		<property name="deadline" value="2029/10/29 14:30"/>
+		<property name="paragraphs" value="This is the third description"/>
+		<property name="minMoney" value="33000.00 €"/>
+		<property name="maxMoney" value="39000.00 €"/>
+		<property name="email" value="example3@email.com"/>
+	</bean>
+	
+	<bean id="inquire04" class="acme.entities.inquiries.Inquire">
+		<property name="title" value="Sample inquire 01"/>
+		<property name="creationMoment" value="2019/08/28 14:30"/>
+		<property name="deadline" value="2029/10/31 14:30"/>
+		<property name="paragraphs" value="This is the 4rt description"/>
+		<property name="minMoney" value="32000.00 €"/>
+		<property name="maxMoney" value="44000.00 €"/>
+		<property name="email" value="example4@email.com"/>
 	</bean>
 
 </beans>
