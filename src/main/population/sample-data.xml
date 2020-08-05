@@ -16,7 +16,42 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
+
+	<!-- Technology Records -->
 	
+	<bean id="technologyRecord01" class="acme.entities.technologyRecords.TechnologyRecord">
+		<property name="title" value="Sample technology record 01"/>
+		<property name="activitySector" value="Construction"/>
+		<property name="inventor" value="Arthur Conan Doyle"/>
+		<property name="description" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+		<property name="web" value="http://example.org/"/>
+		<property name="contactEmail" value="example@hotmail.com"/>
+		<property name="source" value="true"/>
+		<property name="stars" value="-1"/>
+	</bean>
+	
+	<bean id="technologyRecord02" class="acme.entities.technologyRecords.TechnologyRecord">
+		<property name="title" value="Sample technology record 02"/>
+		<property name="activitySector" value="Marine Engineering"/>
+		<property name="inventor" value="Edgar Allan Poe"/>
+		<property name="description" value="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+		<property name="web" value="http://example2.org/"/>
+		<property name="contactEmail" value="example2@hotmail.com"/>
+		<property name="source" value="false"/>
+		<property name="stars" value="3"/>
+	</bean>
+	
+	<bean id="technologyRecord03" class="acme.entities.technologyRecords.TechnologyRecord">
+		<property name="title" value="Sample technology record 03"/>
+		<property name="activitySector" value="Construction"/>
+		<property name="inventor" value="Federico Jimenez Losantos"/>
+		<property name="description" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+		<property name="web" value="http://example3.org/"/>
+		<property name="contactEmail" value="example3@hotmail.com"/>
+		<property name="source" value="true"/>
+		<property name="stars" value="+3"/>
+	</bean>
+
 	<!-- Notices  -->
 	<bean id="notice01" class="acme.entities.notices.Notice">
 		<property name="headerPicture" value="https://exampleimage1.com"/>
@@ -93,9 +128,5 @@
 		<property name="maxMoney" value="44000.00 €"/>
 		<property name="email" value="example4@email.com"/>
 	</bean>
-	
-	
-	
-	
 
 </beans>

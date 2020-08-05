@@ -34,7 +34,8 @@ master.menu.anonymous.favourite-link.alebarmor = Ale's favourite link
 master.menu.anonymous.favourite-link.lizseth = Lizseth's favourite link
 master.menu.anonymous.favourite-link.jaime = Jaime's favourite link
 
-
+master.menu.anonymous.technologyRecord = Technology Record
+master.menu.anonymous.technologyRecord.list = Records
 
 # master.menu.administrator ###################################################
 
