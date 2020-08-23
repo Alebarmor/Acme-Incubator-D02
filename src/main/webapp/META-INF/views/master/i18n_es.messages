@@ -67,6 +67,8 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.notice = Avisos
 master.menu.administrator.notice.list = Lista de avisos
 
+master.menu.administrator.customisation = Customización
+
 # master.menu.authenticated ###################################################
 master.menu.authenticated = Authenticado
 
