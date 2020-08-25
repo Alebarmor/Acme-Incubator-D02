@@ -69,7 +69,7 @@ master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.notice = Notices
 master.menu.administrator.notice.list = Notices list
 
-
+master.menu.administrator.customisation = Customisation
 
 # master.menu.authenticated ###################################################
 

@@ -69,6 +69,8 @@ master.menu.administrator.dashboard = Panel de estadísticas
 master.menu.administrator.notice = Avisos
 master.menu.administrator.notice.list = Lista de avisos
 
+master.menu.administrator.customisation = Customización
+
 # master.menu.authenticated ###################################################
 master.menu.authenticated = Authenticado
 
