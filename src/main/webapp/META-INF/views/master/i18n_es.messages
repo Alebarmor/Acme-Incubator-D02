@@ -64,6 +64,8 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 
+master.menu.administrator.dashboard = Panel de estadísticas
+
 master.menu.administrator.notice = Avisos
 master.menu.administrator.notice.list = Lista de avisos
 

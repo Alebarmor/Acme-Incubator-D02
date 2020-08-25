@@ -52,7 +52,7 @@
 		<acme:menu-option code="master.menu.administrator.notice" access="hasRole('Administrator')">
 		<acme:menu-suboption code="master.menu.administrator.notice.list" action="/administrator/notice/list"/>
 		</acme:menu-option>
-			
+
 		<acme:menu-option code="master.menu.anonymous.technologyRecord" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.anonymous.technologyRecord.list" action="/anonymous/technology-record/list"/>
 		</acme:menu-option>
@@ -76,6 +76,8 @@
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-suboption code="master.menu.administrator.customisation" action="/administrator/customisation/show"/>
+      <acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
