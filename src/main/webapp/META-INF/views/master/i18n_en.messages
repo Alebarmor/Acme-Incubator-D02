@@ -43,6 +43,17 @@ master.menu.anonymous.tool.list = Tools list
 master.menu.anonymous.notice.list = Active notices list
 master.menu.anonymous.notice = Notices
 
+# master.menu.anonymous.bulletin #######################################################
+
+master.menu.anonymous.bulletin = Bulletins
+
+master.menu.anonymous.bulletin.barba = Barba Bulletin
+master.menu.anonymous.bulletin.barba.create = Create Barba Bulletin
+master.menu.anonymous.bulletin.esquen = Esquen Bulletin
+master.menu.anonymous.bulletin.esquen.create = Create Esquen Bulletin
+master.menu.anonymous.bulletin.lucas = Lucas Bulletin
+master.menu.anonymous.bulletin.lucas.create = Create Lucas Bulletin
+
 
 # master.menu.authenticated #######################################################
 

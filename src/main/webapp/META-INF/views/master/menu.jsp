@@ -23,6 +23,15 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.alebarmor" action="https://twitter.com/home"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.lizseth" action="http://www.youtube.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.jaime" action="http://www.google.com/"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.bulletin.barba" action="/anonymous/barba-bulletin/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.bulletin.barba.create" action="/anonymous/barba-bulletin/create"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.bulletin.esquen" action="/anonymous/esquen-bulletin/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.bulletin.barba.create" action="/anonymous/esquen-bulletin/create"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.bulletin.lucas" action="/anonymous/lucas-bulletin/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.bulletin.lucas.create" action="/anonymous/lucas-bulletin/create"/>
 
 		</acme:menu-option>
 		

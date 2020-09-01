@@ -44,6 +44,17 @@ master.menu.anonymous.tool.list = Lista de herramientas
 master.menu.anonymous.notice.list = Lista de avisos activos
 master.menu.anonymous.notice = Avisos
 
+# master.menu.anonymous.bulletin #######################################################
+
+master.menu.anonymous.bulletin = Boletines
+
+master.menu.anonymous.bulletin.barba = Boletín de Barba
+master.menu.anonymous.bulletin.barba.create = Crear boletín de Barba
+master.menu.anonymous.bulletin.esquen = Boletín de Esquen
+master.menu.anonymous.bulletin.esquen.create = Crear boletín de Esquen
+master.menu.anonymous.bulletin.lucas = Boletín de Lucas
+master.menu.anonymous.bulletin.lucas.create = Crear boletín de Lucas
+
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated.overture = Propuestas
